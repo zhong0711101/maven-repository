@@ -64,7 +64,7 @@
 
 		<resteasy-spring.version>2.2.2.GA</resteasy-spring.version>
 		<jsr311-api.version>1.1.1</jsr311-api.version>
-		<poi.version>3.7</poi.version>
+		<poi.version>3.10.1</poi.version>
 	</properties>
 
 	<dependencyManagement>
@@ -452,25 +452,10 @@
 			<!-- Redis End -->
 
 			<!-- Excel util jar -->
-			<!-- <dependency>
-				<groupId>org.apache.poi</groupId>
-				<artifactId>poi</artifactId>
-				<version>${poi.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>commons-logging</groupId>
-						<artifactId>commons-logging</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>log4j</groupId>
-						<artifactId>log4j</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency> -->
 			<dependency>
 				<groupId>org.apache.poi</groupId>
 				<artifactId>poi-ooxml</artifactId>
-				<version>3.10.1</version>
+				<version>${poi.version}</version>
 			</dependency>
 			<!-- Excel util jar -->
 
@@ -482,8 +467,6 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
-	 
 
 	<build>
 		<plugins>
@@ -571,6 +554,7 @@
 			</plugin>
 		</plugins>
 	</build>
+	
 	<reporting>
 		<plugins>
 			<plugin>
