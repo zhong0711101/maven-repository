@@ -13,6 +13,8 @@
 		<module>hbird-common-proxy</module>
 		<module>hbird-common-dao</module>
 		<module>hbird-common-manager</module>
+		<module>hbird-common-resteasy</module>
+		<module>hbird-common-ws</module>
 		<module>hbird-common-web</module>
 	</modules>
 
@@ -52,6 +54,7 @@
 		<junit.version>4.5</junit.version>
 
 		<jackson-jaxrs.version>1.9.3</jackson-jaxrs.version>
+		<jackson-xc.version>1.6.3</jackson-xc.version>
 		<jackson-smile.version>1.9.13</jackson-smile.version>
 		<jackson-core-asl.version>1.9.13</jackson-core-asl.version>
 		<jackson-mapper-asl.version>1.9.13</jackson-mapper-asl.version>
@@ -83,6 +86,16 @@
 			<dependency>
 				<groupId>com.hbird.common</groupId>
 				<artifactId>hbird-common-proxy</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.hbird.common</groupId>
+				<artifactId>hbird-common-resteasy</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.hbird.common</groupId>
+				<artifactId>hbird-common-ws</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
@@ -408,6 +421,12 @@
 				<groupId>org.codehaus.jackson</groupId>
 				<artifactId>jackson-jaxrs</artifactId>
 				<version>${jackson-jaxrs.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.codehaus.jackson</groupId>
+				<artifactId>jackson-xc</artifactId>
+				<version>${jackson-xc.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.codehaus.jackson</groupId>
